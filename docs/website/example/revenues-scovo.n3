@@ -1,0 +1,486 @@
+@prefix ex:      <http://example.org/> .
+
+<urn:/Revenue_Austria_2007_Product2>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "1005256"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product2> , <urn:/Austria> .
+
+<urn:/Revenue_Austria_2008_Product2>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "1328925"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2008> , <urn:/Austria> , <urn:/Product2> .
+
+<urn:/Revenue_Germany_2009_Product2>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "7709520"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product2> , <urn:/Germany> .
+
+<urn:/Austria>
+      a       ex:Country ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Austria" ;
+      =       <http://dbpedia.org/resource/Austria> .
+
+<urn:/Product4>
+      a       ex:Product ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Product4" .
+
+<urn:/Revenues>
+      a       <http://purl.org/NET/scovo#Dataset> ;
+      <http://purl.org/dc/elements/1.1/creator>
+              "Andreas Langegger" ;
+      <http://purl.org/dc/elements/1.1/date>
+              "2011-07-09T21:13:46.106Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.429Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.456Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.497Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.508Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.483Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.112Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.126Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.131Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.065Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.141Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.094Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.447Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.422Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.502Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.492Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.136Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.072Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.079Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.1Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.519Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> , "2011-07-09T21:13:46.44Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://purl.org/dc/elements/1.1/title>
+              "Revenues of Example, Inc. per year, country, and products" .
+
+<urn:/ItemsSold_Germany_2009_Product1>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "3419"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product1> , <urn:/Germany> .
+
+<urn:/ItemsSold_Germany_2007_Product5>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "121"^^<http://www.w3.org/2001/XMLSchema#byte> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Germany> , <urn:/Product5> .
+
+<urn:/ItemsSold_Austria_2007_Product2>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "4333"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product2> , <urn:/Austria> .
+
+<urn:/2009>
+      a       ex:Year ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "2009"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      =       <http://dbpedia.org/resource/2009> .
+
+<urn:/Revenue_Austria_2007_Product3>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "1136016"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Austria> , <urn:/Product3> .
+
+<urn:/Revenue_Germany_2007_Product3>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "8092350"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product3> , <urn:/Germany> .
+
+<urn:/Revenue_Germany_2007_Product4>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "1198050"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product4> , <urn:/Germany> .
+
+[]    <http://www.w3.org/2000/01/rdf-schema#label>
+              "Product" ;
+      <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+              <http://purl.org/NET/scovo#Dimension> .
+
+<urn:/Revenue_Austria_2009_Product3>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "1917760"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Austria> , <urn:/Product3> .
+
+<urn:/Revenue_Austria_2007_Product1>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "9154"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Austria> , <urn:/Product1> .
+
+<urn:/ItemsSold_Germany_2009_Product4>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "3412"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product4> , <urn:/Germany> .
+
+<urn:/Revenue_Germany_2009_Product3>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "9932480"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product3> , <urn:/Germany> .
+
+ex:ItemsSold
+      a       <http://purl.org/NET/scovo#Item> .
+
+<urn:/Revenue_Austria_2008_Product1>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "8648"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2008> , <urn:/Austria> , <urn:/Product1> .
+
+<urn:/Product3>
+      a       ex:Product ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Product3" .
+
+<urn:/ItemsSold_Germany_2007_Product1>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "2431"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product1> , <urn:/Germany> .
+
+ex:Revenue
+      a       <http://purl.org/NET/scovo#Item> .
+
+<urn:/ItemsSold_Austria_2007_Product3>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "3312"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Austria> , <urn:/Product3> .
+
+<urn:/Revenue_Austria_2007_Product4>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "19350"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Austria> , <urn:/Product4> .
+
+<urn:/Revenue_Germany_2007_Product5>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "52514"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Germany> , <urn:/Product5> .
+
+<urn:/2008>
+      a       ex:Year ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "2008"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      =       <http://dbpedia.org/resource/2008> .
+
+<urn:/ItemsSold_Austria_2008_Product4>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "56"^^<http://www.w3.org/2001/XMLSchema#byte> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2008> , <urn:/Austria> , <urn:/Product4> .
+
+<urn:/Revenue_Austria_2009_Product4>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "23328"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Austria> , <urn:/Product4> .
+
+[]    <http://www.w3.org/2000/01/rdf-schema#label>
+              "Country" ;
+      <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+              <http://purl.org/NET/scovo#Dimension> .
+
+<urn:/ItemsSold_Austria_2009_Product4>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "54"^^<http://www.w3.org/2001/XMLSchema#byte> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Austria> , <urn:/Product4> .
+
+<urn:/ItemsSold_Germany_2009_Product5>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "312"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Germany> , <urn:/Product5> .
+
+<urn:/Revenue_Germany_2007_Product2>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "7339050"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product2> , <urn:/Germany> .
+
+<file:mappings/iswc09-example-scovo.trig>
+      <http://www.w3.org/2002/07/owl#import>
+              <http://purl.org/NET/scovo#> .
+
+<urn:/Revenue_Austria_2008_Product4>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "24304"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2008> , <urn:/Austria> , <urn:/Product4> .
+
+<urn:/Product2>
+      a       ex:Product ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Product2" .
+
+<urn:/Revenue_Germany_2009_Product4>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "1091840"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product4> , <urn:/Germany> .
+
+<urn:/ItemsSold_Austria_2009_Product2>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "3493"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product2> , <urn:/Austria> .
+
+<urn:/ItemsSold_Germany_2009_Product3>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "31039"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product3> , <urn:/Germany> .
+
+<urn:/ItemsSold_Germany_2007_Product2>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "31230"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product2> , <urn:/Germany> .
+
+<urn:/ItemsSold_Germany_2007_Product3>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "23121"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product3> , <urn:/Germany> .
+
+<urn:/ItemsSold_Austria_2007_Product4>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "45"^^<http://www.w3.org/2001/XMLSchema#byte> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Austria> , <urn:/Product4> .
+
+<urn:/2007>
+      a       ex:Year ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "2007"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      =       <http://dbpedia.org/resource/2007> .
+
+<urn:/ItemsSold_Austria_2009_Product3>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "5993"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Austria> , <urn:/Product3> .
+
+<urn:/Revenue_Germany_2007_Product1>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "55913"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product1> , <urn:/Germany> .
+
+<urn:/Revenue_Austria_2009_Product1>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "11760"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Austria> , <urn:/Product1> .
+
+<urn:/ItemsSold_Austria_2008_Product3>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "4566"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2008> , <urn:/Austria> , <urn:/Product3> .
+
+<urn:/ItemsSold_Austria_2008_Product1>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "376"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2008> , <urn:/Austria> , <urn:/Product1> .
+
+<urn:/Revenue_Germany_2009_Product1>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "82056"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product1> , <urn:/Germany> .
+
+<urn:/Revenue_Austria_2008_Product3>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "1598100"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2008> , <urn:/Austria> , <urn:/Product3> .
+
+<urn:/Revenue_Germany_2009_Product5>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "134784"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Germany> , <urn:/Product5> .
+
+<urn:/ItemsSold_Austria_2007_Product1>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "398"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Austria> , <urn:/Product1> .
+
+<urn:/Product1>
+      a       ex:Product ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Product1" .
+
+<urn:/ItemsSold_Austria_2009_Product1>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "490"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Austria> , <urn:/Product1> .
+
+<urn:/ItemsSold_Germany_2009_Product2>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "32123"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product2> , <urn:/Germany> .
+
+<urn:/Product5>
+      a       ex:Product ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Product5" .
+
+<urn:/ItemsSold_Germany_2007_Product4>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "3423"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2007> , <urn:/Product4> , <urn:/Germany> .
+
+[]    <http://www.w3.org/2000/01/rdf-schema#label>
+              "Year" ;
+      <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+              <http://purl.org/NET/scovo#Dimension> .
+
+<urn:/Revenue_Austria_2009_Product2>
+      a       ex:Revenue ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "838320"^^<http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2009> , <urn:/Product2> , <urn:/Austria> .
+
+<urn:/Germany>
+      a       ex:Country ;
+      <http://www.w3.org/2000/01/rdf-schema#label>
+              "Germany" ;
+      =       <http://dbpedia.org/resource/Germany> .
+
+<urn:/ItemsSold_Austria_2008_Product2>
+      a       ex:ItemsSold ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              "5655"^^<http://www.w3.org/2001/XMLSchema#short> ;
+      <http://purl.org/NET/scovo#dataset>
+              <urn:/Revenues> ;
+      <http://purl.org/NET/scovo#dimension>
+              <urn:/2008> , <urn:/Austria> , <urn:/Product2> .

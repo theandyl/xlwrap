@@ -1,0 +1,453 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/NET/scovo#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:ex="http://example.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2007_Product2">
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1005256</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2008_Product2">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1328925</rdf:value>
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+    <j.0:dimension rdf:resource="urn:/2008"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2009_Product2">
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7709520</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Austria">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Austria"/>
+    <rdf:type rdf:resource="http://example.org/Country"/>
+    <rdfs:label>Austria</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Product4">
+    <rdf:type rdf:resource="http://example.org/Product"/>
+    <rdfs:label>Product4</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenues">
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.508Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.502Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.106Z</dc:date>
+    <rdf:type rdf:resource="http://purl.org/NET/scovo#Dataset"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.447Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.131Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.429Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.136Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.141Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.072Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.519Z</dc:date>
+    <dc:creator>Andreas Langegger</dc:creator>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.456Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.492Z</dc:date>
+    <dc:title>Revenues of Example, Inc. per year, country, and products</dc:title>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.112Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.1Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.065Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.483Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.079Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.497Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.094Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.126Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.44Z</dc:date>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-07-09T21:13:46.422Z</dc:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2009_Product1">
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">3419</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2007_Product5">
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product5"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#byte">121</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2007_Product2">
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">4333</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/2009">
+    <rdf:type rdf:resource="http://example.org/Year"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2009</rdfs:label>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/2009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2007_Product3">
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1136016</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2007_Product3">
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8092350</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2007_Product4">
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1198050</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+    <rdfs:label>Product</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2009_Product3">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1917760</rdf:value>
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2007_Product1">
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">9154</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2009_Product4">
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">3412</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2009_Product3">
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9932480</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ItemsSold">
+    <rdf:type rdf:resource="http://purl.org/NET/scovo#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2008_Product1">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">8648</rdf:value>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2008"/>
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Product3">
+    <rdf:type rdf:resource="http://example.org/Product"/>
+    <rdfs:label>Product3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2007_Product1">
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2431</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Revenue">
+    <rdf:type rdf:resource="http://purl.org/NET/scovo#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2007_Product3">
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">3312</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2007_Product4">
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">19350</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2007_Product5">
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product5"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">52514</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/2008">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/2008"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2008</rdfs:label>
+    <rdf:type rdf:resource="http://example.org/Year"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2008_Product4">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#byte">56</rdf:value>
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+    <j.0:dimension rdf:resource="urn:/2008"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2009_Product4">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">23328</rdf:value>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+    <rdfs:label>Country</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2009_Product4">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#byte">54</rdf:value>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2009_Product5">
+    <j.0:dimension rdf:resource="urn:/Product5"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">312</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2007_Product2">
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7339050</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:mappings/iswc09-example-scovo.trig">
+    <owl:import rdf:resource="http://purl.org/NET/scovo#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2008_Product4">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">24304</rdf:value>
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+    <j.0:dimension rdf:resource="urn:/2008"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Product2">
+    <rdf:type rdf:resource="http://example.org/Product"/>
+    <rdfs:label>Product2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2009_Product4">
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1091840</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2009_Product2">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">3493</rdf:value>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2009_Product3">
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">31039</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2007_Product2">
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">31230</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2007_Product3">
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">23121</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2007_Product4">
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#byte">45</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/2007">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/2007"/>
+    <rdf:type rdf:resource="http://example.org/Year"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2007</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2009_Product3">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">5993</rdf:value>
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2007_Product1">
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">55913</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2009_Product1">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">11760</rdf:value>
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2008_Product3">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">4566</rdf:value>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2008"/>
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2008_Product1">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">376</rdf:value>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2008"/>
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2009_Product1">
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">82056</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2008_Product3">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1598100</rdf:value>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2008"/>
+    <j.0:dimension rdf:resource="urn:/Product3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Germany_2009_Product5">
+    <j.0:dimension rdf:resource="urn:/Product5"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">134784</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2007_Product1">
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">398</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Product1">
+    <rdf:type rdf:resource="http://example.org/Product"/>
+    <rdfs:label>Product1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2009_Product1">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">490</rdf:value>
+    <j.0:dimension rdf:resource="urn:/Product1"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2009_Product2">
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">32123</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Product5">
+    <rdf:type rdf:resource="http://example.org/Product"/>
+    <rdfs:label>Product5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Germany_2007_Product4">
+    <j.0:dimension rdf:resource="urn:/Product4"/>
+    <j.0:dimension rdf:resource="urn:/2007"/>
+    <j.0:dimension rdf:resource="urn:/Germany"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">3423</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+    <rdfs:label>Year</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Revenue_Austria_2009_Product2">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int">838320</rdf:value>
+    <rdf:type rdf:resource="http://example.org/Revenue"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dimension rdf:resource="urn:/2009"/>
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/Germany">
+    <rdfs:label>Germany</rdfs:label>
+    <rdf:type rdf:resource="http://example.org/Country"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Germany"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:/ItemsSold_Austria_2008_Product2">
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#short">5655</rdf:value>
+    <j.0:dimension rdf:resource="urn:/Product2"/>
+    <j.0:dimension rdf:resource="urn:/2008"/>
+    <j.0:dimension rdf:resource="urn:/Austria"/>
+    <j.0:dataset rdf:resource="urn:/Revenues"/>
+    <rdf:type rdf:resource="http://example.org/ItemsSold"/>
+  </rdf:Description>
+</rdf:RDF>
