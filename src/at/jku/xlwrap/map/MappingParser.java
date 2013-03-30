@@ -24,6 +24,7 @@ import at.jku.xlwrap.map.expr.func.FunctionRegistry;
 import at.jku.xlwrap.map.range.AnyRange;
 import at.jku.xlwrap.map.transf.ColumnShift;
 import at.jku.xlwrap.map.transf.FileRepeat;
+import at.jku.xlwrap.map.transf.ScriptRepeat;
 import at.jku.xlwrap.map.transf.RowShift;
 import at.jku.xlwrap.map.transf.SheetRepeat;
 import at.jku.xlwrap.map.transf.SheetShift;
@@ -32,6 +33,7 @@ import at.jku.xlwrap.vocab.XLWrap;
 
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.graph.BulkUpdateHandler;
+import com.hp.hpl.jena.ontology.OntProperty;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.NodeIterator;
@@ -164,6 +166,9 @@ public class MappingParser {
 			throw new XLWrapException("Required property " + XLWrap.templateGraph + " not found for xl:Mapping " + m + ".");
 		else {
 			NamedGraph g = spec.getGraph(tg.getResource().getURI());
+			if (g == null)
+				throw new XLWrapException("Named graph <" + tg.getResource() + "> not found in mapping file!");
+				
 			tmplModel = ModelFactory.createDefaultModel();
 			tmplModel.setNsPrefixes(Constants.DEFAULT_PREFIXES); // add default prefixes
 			tmplModel.setNsPrefixes(specModel.getNsPrefixMap()); // take prefixes from mapping file, possibly override defaults
@@ -271,8 +276,29 @@ public class MappingParser {
 			String breakCondition = getBreakCondition(resource);
 			return new FileRepeat(files, restriction, skipCondition, breakCondition);
 			
+		} else if (type.equals(XLWrap.ScriptRepeat.getURI())) {
+			String initCode = getString(resource, XLWrap.initScript);
+			String nextCode = getString(resource, XLWrap.nextScript);
+			String repeatCondition = getString(resource, XLWrap.repeatCondition);
+			String restriction = getRestriction(resource, ScriptRepeat.class.getName());
+			String skipCondition = getSkipCondition(resource);
+			String breakCondition = getBreakCondition(resource);
+			return new ScriptRepeat(initCode, nextCode, repeatCondition, restriction, skipCondition, breakCondition);
 		} else
 			throw new XLWrapException("Unknown transformation type: " + type);
+	}
+
+	/**
+	 * @param resource
+	 * @param p property
+	 * @return string or null
+	 */
+	private String getString(Resource resource, OntProperty p) {
+		Statement s = resource.getProperty(p);
+		if (s == null)
+			return null;
+		else
+			return s.getString();
 	}
 
 	/**

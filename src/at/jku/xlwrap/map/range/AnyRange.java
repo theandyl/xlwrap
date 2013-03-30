@@ -51,6 +51,8 @@ public class AnyRange extends Range {
 	@Override
 	public Range changeSheetNumber(int n, Range restrict, ExecutionContext context) { return this;}
 	
+	@Override
+	public Range changeFileName(NameChanger nameChanger, Range restriction, ExecutionContext context) { return this; }
 	
 	@Override
 	public CellIterator getCellIterator(ExecutionContext context) throws XLWrapException {

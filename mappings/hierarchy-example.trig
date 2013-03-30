@@ -12,7 +12,7 @@
 
 { # default graph
   [] a xl:Mapping ;
-  	xl:offline "true"^^xsd:boolean ;
+  	xl:offline "false"^^xsd:boolean ;
   
   xl:template [
     xl:fileName "mappings/files/hierarchy-example.xls" ;

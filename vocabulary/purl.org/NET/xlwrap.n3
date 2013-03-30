@@ -203,6 +203,34 @@
 .
 
 # --------------------------------------------------
+:ScriptRepeat			a :Transformation ;
+	rdfs:label			"Script repeat" ;
+	rdfs:comment		"Applies the template graph multiple times based on JavaScript functions, variables in sheet and file names are replaced." ;
+.
+
+:initScript				a rdf:Property ;
+	rdfs:label			"Initialization JavaScript code" ;
+	rdfs:domain			:ScriptRepeat ;
+	rdfs:range			xsd:String ;
+	:required			"false"^^xsd:boolean ;
+.
+
+:nextScript				a rdf:Property ;
+	rdfs:label			"Next iteration JavaScript code" ;
+	rdfs:domain			:ScriptRepeat ;
+	rdfs:range			xsd:String ;
+	:required			"false"^^xsd:boolean ;
+.
+
+:repeatCondition		a rdf:Property ;
+	rdfs:label			"Repeat condition" ;
+	rdfs:comment		"must return a boolean value if exists" ;
+	rdfs:domain			:ScriptRepeat ;
+	rdfs:range			xsd:String ;
+	:required			"false"^^xsd:boolean ;
+.
+
+# --------------------------------------------------
 :Expr	a rdfs:Class , rdfs:Datatype ;
 	rdfs:label   "XLWrap Expression" ;
 	rdfs:comment "Represents an XLWrap Expression, which is evaluated during the mapping process. Expressions are used in named template graphs in the TriG file. The documentation for expressions can be found at http://xlwrap.sourceforge.net/" ;

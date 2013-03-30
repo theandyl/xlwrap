@@ -31,7 +31,8 @@ public class ISWCExample {
 	
 	public static void main(String[] args) throws XLWrapException {
 		
-		XLWrapMapping map = MappingParser.parse("mappings/iswc09-example.trig");
+//		XLWrapMapping map = MappingParser.parse("mappings/iswc09-example.trig");
+		XLWrapMapping map = MappingParser.parse("mappings/owa.trig");
 		
 		XLWrapMaterializer mat = new XLWrapMaterializer();
 		Model m = mat.generateModel(map);

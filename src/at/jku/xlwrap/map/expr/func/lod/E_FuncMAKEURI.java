@@ -47,16 +47,15 @@ public class E_FuncMAKEURI extends XLExprFunction {
 		Integer p = context.getPort();
 		String hostname = context.getHostname();
 		String prefix = context.getPubbyPathPrefix();
-		StringBuilder sb = new StringBuilder();
 		if (p == null || hostname == null || prefix == null) {
-//			log.warn("Cannot evaluate function " + this + ", not running in server mode.");
-			prefix = "";
-			sb.append("urn:");
-		} else {	
-			sb.append("http://").append(hostname);
-			if (p != 80)
-				sb.append(":").append(p);
+			log.warn("Cannot evaluate function " + this + ", not running in server mode.");
+			return null;
 		}
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append("http://").append(hostname);
+		if (p != 80)
+			sb.append(":").append(p);
 		
 		// if one argument, URI-encode v1
 		if (args.size() == 1) {

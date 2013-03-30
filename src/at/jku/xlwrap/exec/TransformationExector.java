@@ -26,8 +26,9 @@ public interface TransformationExector {
 	
 	/**
 	 * initialize the TransformationExecutor
+	 * @throws XLWrapException 
 	 */
-	public void init();
+	public void init() throws XLWrapException;
 
 	/**
 	 * check for next and transform if possible - this will change the internal state (e.g. iterators)

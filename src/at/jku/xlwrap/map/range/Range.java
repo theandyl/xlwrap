@@ -104,7 +104,15 @@ public abstract class Range implements Copy<Range>{
 	 */
 	public abstract Range changeSheetNumber(int n, Range restrict, ExecutionContext context) throws XLWrapException;
 
+	/**
+	 * @param nameChanger
+	 * @param restriction
+	 * @param context
+	 * @throws XLWrapException 
+	 */
+	public abstract Range changeFileName(NameChanger nameChanger, Range restriction, ExecutionContext context) throws XLWrapException;
 
+	
 // misc methods
 
 	/**
@@ -169,5 +177,6 @@ public abstract class Range implements Copy<Range>{
 		public abstract Cell next() throws XLWrapException, XLWrapEOFException;
 		
 	}
+
 
 }

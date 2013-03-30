@@ -1,14 +1,12 @@
 TODOs
 
 Parser:
-* CSV: support for different character sets
 * support for numbers in function names (assume range has max. 3 letters, e.g. ZZZ3 and function names with numbers must have more than 3 letters first)
 
 Mapping/Transformations:
 * DirectoryShift based on patterns
 * loading of custom functions, does not work now because xl:Expr literals are already parsed
   during reading the mapping model
-* constant graph once: e.g. NOW() once
 
 Execution:
 * full support of date, time, and time intervals

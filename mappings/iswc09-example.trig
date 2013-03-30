@@ -34,13 +34,13 @@
 
 # mapping
 { [] a xl:Mapping ;
-	xl:offline "true"^^xsd:boolean ;
+	xl:offline "false"^^xsd:boolean ;
 
 	xl:template [
 		xl:fileName "mappings/files/iswc09-example.xls" ;
 		xl:sheetNumber "0" ;
 		xl:templateGraph :Revenues ;
-#		xl:constantGraph :SCOVODataset ;
+		xl:constantGraph :SCOVODataset ;
 #		xl:templateGraph :SCOVORevenues ;
 		xl:transform [
 			a rdf:Seq ;
@@ -80,8 +80,8 @@
 	[ xl:id "Revenues_simple" ] a scv:Dataset ;
 	dc:title    "Revenues of Example, Inc. per year, country, and products" ;
 	dc:creator  "Andreas Langegger" ;
+	ex:foo		"DATE('2008-10-01 00:00:00')"^^xl:Expr ;
 	dc:date     "NOW()" .
-	
 	ex:Revenue    a scv:Item .
 	ex:ItemsSold  a scv:Item .
 	ex:Year     [ rdfs:label "Year" ; rdfs:subClassOf scv:Dimension ] .

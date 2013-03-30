@@ -236,6 +236,16 @@ public class BoxRange extends Range {
 		return this;
 	}
 	
+	@Override
+	public Range changeFileName(NameChanger nameChanger, Range restriction, ExecutionContext context) throws XLWrapException {
+		if (restriction.subsumes(this, context)) {
+			BoxRange abs = (BoxRange) getAbsoluteRange(context);
+			abs.setFileName(nameChanger.changeFilename(abs.getFileName()));
+			return abs;
+		} else
+			return this;
+	}
+	
 // misc functions
 	
 	@Override

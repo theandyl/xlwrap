@@ -123,6 +123,16 @@ public class FullSheetRange extends Range {
 			setSheetNumber(n);
 		return this;
 	}
+	
+	@Override
+	public Range changeFileName(NameChanger nameChanger, Range restriction, ExecutionContext context) throws XLWrapException {
+		if (restriction.subsumes(this, context)) {
+			FullSheetRange r = (FullSheetRange) getAbsoluteRange(context);
+			r.setFileName(nameChanger.changeFilename(getFileName()));
+			return r;
+		} else
+			return this;
+	}	
 
 // misc functions
 	

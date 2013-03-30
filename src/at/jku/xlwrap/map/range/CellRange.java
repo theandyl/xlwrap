@@ -117,6 +117,10 @@ public class CellRange extends Range {
 		return sheetNum;
 	}
 
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	
 	public void setSheetName(String sheetName) {
 		this.sheetName = sheetName;
 		this.sheetNum = null;
@@ -185,6 +189,19 @@ public class CellRange extends Range {
 		if (restrict.subsumes(this, context))
 			setSheetNumber(n);
 		return this;
+	}
+	
+	/* (non-Javadoc)
+	 * @see at.jku.xlwrap.map.range.Range#changeFileName(at.jku.xlwrap.map.range.NameChanger, at.jku.xlwrap.map.range.Range, at.jku.xlwrap.exec.ExecutionContext)
+	 */
+	@Override
+	public Range changeFileName(NameChanger nameChanger, Range restriction, ExecutionContext context) throws XLWrapException {
+		if (restriction.subsumes(this, context)) {
+			CellRange r = (CellRange) getAbsoluteRange(context);
+			r.setFileName(nameChanger.changeFilename(r.getFileName()));
+			return r;
+		} else
+			return this;
 	}
 	
 	@Override

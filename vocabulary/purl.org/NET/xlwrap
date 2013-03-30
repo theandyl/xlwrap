@@ -174,6 +174,19 @@
     <rdfs:comment>number of a sheet in a spreadsheet workbook; this is the base sheet for relative cell references; either this one or sheetName is required</rdfs:comment>
     <rdfs:label>sheet number</rdfs:label>
   </rdf:Property>
+  <rdf:Property rdf:about="http://purl.org/NET/xlwrap#repeatCondition">
+    <required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</required>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    <rdfs:domain>
+      <Transformation rdf:about="http://purl.org/NET/xlwrap#ScriptRepeat">
+        <rdfs:comment>Applies the template graph multiple times based on JavaScript functions, variables in sheet and file names are replaced.</rdfs:comment>
+        <rdfs:label>Script repeat</rdfs:label>
+      </Transformation>
+    </rdfs:domain>
+    <rdfs:comment>must return a boolean value if exists</rdfs:comment>
+    <rdfs:label>Repeat condition</rdfs:label>
+  </rdf:Property>
   <rdf:Property rdf:about="http://purl.org/NET/xlwrap#sheetName">
     <required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</required>
@@ -181,6 +194,13 @@
     <rdfs:domain rdf:resource="http://purl.org/NET/xlwrap#MapTemplate"/>
     <rdfs:comment>named sheet of a spreadsheet workbook; this is the base sheet for relative cell references; either this one or sheetNumber is required</rdfs:comment>
     <rdfs:label>sheet name</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://purl.org/NET/xlwrap#initScript">
+    <required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</required>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    <rdfs:domain rdf:resource="http://purl.org/NET/xlwrap#ScriptRepeat"/>
+    <rdfs:label>Initialization JavaScript code</rdfs:label>
   </rdf:Property>
   <rdf:Property rdf:about="http://purl.org/NET/xlwrap#constantGraph">
     <rdfs:range rdf:parseType="Resource">
@@ -203,6 +223,13 @@
     <rdfs:domain rdf:resource="http://purl.org/NET/xlwrap#Transformation"/>
     <rdfs:comment>An xl:Expr, which is evaluated each time before a template is applied. Skips generation of triples if false and resumes.</rdfs:comment>
     <rdfs:label>skip condition</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://purl.org/NET/xlwrap#nextScript">
+    <required rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</required>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    <rdfs:domain rdf:resource="http://purl.org/NET/xlwrap#ScriptRepeat"/>
+    <rdfs:label>Next iteration JavaScript code</rdfs:label>
   </rdf:Property>
   <ParseProfile rdf:about="http://purl.org/NET/xlwrap#semicolon_unquoted"/>
   <Shift rdf:about="http://purl.org/NET/xlwrap#ColShift">

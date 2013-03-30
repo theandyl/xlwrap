@@ -50,6 +50,9 @@ public class NullRange extends Range {
 	public Range changeSheetNumber(int n, Range restrict, ExecutionContext context) { return this;}
 
 	@Override
+	public Range changeFileName(NameChanger nameChanger, Range restriction, ExecutionContext context) { return this; }
+	
+	@Override
 	public Range getAbsoluteRange(ExecutionContext context) {
 		return INSTANCE;
 	}

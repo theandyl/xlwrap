@@ -106,6 +106,14 @@ public class MultiRange extends Range {
 	}
 	
 	@Override
+	public Range changeFileName(NameChanger nameChanger, Range restriction, ExecutionContext context) throws XLWrapException {
+		MultiRange result = new MultiRange();
+		for (Range sub : ranges)
+			result.addRange(sub.changeFileName(nameChanger, restriction, context));
+		return result;
+	}
+	
+	@Override
 	public CellIterator getCellIterator(ExecutionContext context) throws XLWrapException {
 		return new CellIterator(getAbsoluteRange(context), context) {
 			Iterator<Range> rangeIt;
